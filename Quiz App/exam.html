@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/64a4535c71.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Codedamn - Quiz Project</title>
+  </head>
+
+  <body onload="displayQuestions()">
+    <!-- header -->
+    <div id="navbar">
+      <a id="leaderboard"
+        ><h2>View Highscores: <span id="highscore"></span></h2>
+        <!-- <i class="fas fa-hand-point-left fa-lg"> -->
+      </a>
+      <h2 id="Time">Time: <span id="Timer"></span></h2>
+    </div>
+    <div class="main">
+      <!-- Guidelines -->
+      <div id="AllQuestions" style="display: black">
+        <h3 id="questions">Hello</h3>
+        <div id="option-container">
+          <span
+            id="option1"
+            class="options"
+            value="a"
+            onclick="checkAns(event)"
+          ></span>
+          <span
+            id="option2"
+            class="options"
+            value="b"
+            onclick="checkAns(event)"
+          ></span>
+          <span
+            id="option3"
+            class="options"
+            value="c"
+            onclick="checkAns(event)"
+          ></span>
+          <span
+            id="option4"
+            class="options"
+            value="d"
+            onclick="checkAns(event)"
+          ></span>
+        </div>
+        <div>
+          <button onclick="prev()" id="previous">Previous</button>
+          <button onclick="Submit()" id="submit">Submit</button>
+          <button onclick="next()" id="next">Next</button>
+        </div>
+      </div>
+      <div id="Result">
+        <!-- Result -->
+        <div id="Result-div" style="display: none">
+          <h1>All done!</h1>
+          <br />
+          <p>
+            Enter your initials:&nbsp;
+            <input type="text" class="player-name" oninput="addUser(event)" />
+          </p>
+
+          <span
+            ><p>
+              Well done!&nbsp; <span id="user"></span>&nbsp;Your score is
+              <span id="score"></span></p
+          ></span>
+        </div>
+      </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

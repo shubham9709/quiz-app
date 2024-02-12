@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/64a4535c71.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Codedamn - Quiz Project</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div id="navbar">
+      <a id="leaderboard"
+        ><h2>View Highscores</h2>
+        <!-- <i class="fas fa-hand-point-left fa-lg"> -->
+      </a>
+      <h2 id="Time">Time:</h2>
+    </div>
+    <div class="main">
+      <!-- Guidelines -->
+      <div id="guidelines">
+        <h3>Coding quiz challenge</h3>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit.
+        </p>
+        <p>
+          Keep in mind that incorrect answers will penalize your score/time by
+          ten seconds.
+        </p>
+        <button onclick="startExam()">Start Quiz</button>
+      </div>
+    </div>
+    <script>
+      const startExam = () => {
+        window.location.href = "exam.html";
+      };
+    </script>
+  </body>
+</html>
